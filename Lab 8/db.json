@@ -1,0 +1,58 @@
+{
+  "Customers": [
+    {
+      "id": 1,
+      "CustomerCode": "1001",
+      "CustomerName": "Farukh",
+      "CustomerAmount": "100.23"
+    },
+    {
+      "CustomerCode": "2003",
+      "CustomerName": "testy",
+      "CustomerAmount": "12",
+      "id": 2
+    },
+    {
+      "CustomerCode": "5001",
+      "CustomerName": "testy",
+      "CustomerAmount": "12",
+      "id": 3
+    },
+    {
+      "CustomerCode": "3001",
+      "CustomerName": "fs",
+      "CustomerAmount": "120",
+      "id": 4
+    },
+    {
+      "CustomerCode": "4001",
+      "CustomerName": "ddd",
+      "CustomerAmount": "145",
+      "id": 5
+    },
+    {
+      "CustomerCode": "4001",
+      "CustomerName": "ddd",
+      "CustomerAmount": "145",
+      "id": 6
+    },
+    {
+      "CustomerCode": "6008",
+      "CustomerName": "testdouble",
+      "CustomerAmount": "12",
+      "id": 7
+    },
+    {
+      "CustomerCode": "6008",
+      "CustomerName": "testdouble",
+      "CustomerAmount": "12",
+      "id": 8
+    },
+    {
+      "CustomerCode": "4004",
+      "CustomerName": "double123",
+      "CustomerAmount": "12",
+      "id": 9
+    }
+  ]
+}

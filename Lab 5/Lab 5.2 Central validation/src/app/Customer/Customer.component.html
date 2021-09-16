@@ -1,0 +1,41 @@
+<div class="container">
+    <h1> {{title}} </h1>
+    {{customerModel.formGroup.value|json}}
+    <form [formGroup]="customerModel.formGroup" novalidate>
+        Customer Code :<input type="text" [(ngModel)]="customerModel.CustomerCode"
+            formControlName="CustomerCodeControl"><br>
+        Customer Name :<input type="text" [(ngModel)]="customerModel.CustomerName"
+            formControlName="CustomerNameControl"><br>
+        Customer Amount :<input type="text" [(ngModel)]="customerModel.CustomerAmount"
+            [ngModelOptions]="{standalone: true}"><br>
+
+        <hr>
+        <button class="btn btn-primary" [disabled]="!(customerModel.formGroup.valid)" (click)="Add()">Add</button>
+        <div class="alert alert-danger" *ngIf="haserrorFunc('CustomerCodeControl','pattern') 
+        && checkDirty('CustomerCodeControl')">
+            Customer code format is not proper</div>
+        <div class="alert alert-danger" *ngIf="haserrorFunc('CustomerCodeControl','required') 
+        && checkDirty('CustomerCodeControl')">
+            Customer code is required</div>
+        <div class="alert alert-danger" *ngIf="haserrorFunc('CustomerNameControl','required') 
+            && checkDirty('CustomerNameControl')">
+            Customer name is required</div>
+        <table border="1 px solid">
+            <tr>
+                <th>CustomerCode</th>
+                <th>CustomerName</th>
+                <th>CustomerAmount</th>
+            </tr>
+            <tr *ngFor="let cust of customerModels">
+                <td>{{cust.CustomerCode}}</td>
+                <td>{{cust.CustomerName}}</td>
+                <td>{{cust.CustomerAmount}}</td>
+            </tr>
+        </table>
+
+        <hr>
+        {{customerModel.CustomerCode}} <br>
+        {{customerModel.CustomerName}} <br>
+        {{customerModel.CustomerAmount}} <br>
+    </form>
+</div>
