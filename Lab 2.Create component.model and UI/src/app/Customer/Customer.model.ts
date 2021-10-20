@@ -4,12 +4,3 @@ export class Customer{
     CustomerName:string='';
     CustomerAmount:number=0;
 }
-
-
-
-
-
-
-
-
-

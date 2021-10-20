@@ -7,9 +7,10 @@ import { GridComponent } from '../Utility/Grid.component';
 import { CustomerComponent } from './Customer.component';
 import {HttpClientModule,HTTP_INTERCEPTORS} from '@angular/common/http'
 import { MyInterceptor } from '../Utility/Utility.HttpInterceptor';
+import { GradePipePipe } from './grade-pipe.pipe';
 
 @NgModule({
-    declarations:[CustomerComponent,GridComponent],
+    declarations:[CustomerComponent,GridComponent,GradePipePipe],
     imports:[CommonModule,FormsModule,
         ReactiveFormsModule,
         HttpClientModule,

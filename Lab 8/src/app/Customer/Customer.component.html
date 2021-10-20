@@ -31,12 +31,12 @@
                 <td>{{cust.CustomerName}}</td>
                 <td>{{cust.CustomerAmount}}</td>
             </tr>
-        </table> 
+        </table> -->
 
         <hr>
         {{customerModel.CustomerCode}} <br>
-        {{customerModel.CustomerName}} <br>
-        {{customerModel.CustomerAmount}} <br>-->
+        {{customerModel.CustomerName|uppercase}} <br>
+        {{customerModel.CustomerAmount|gradePipe}} <br>
         <button class="btn btn-secondary" [disabled]="Disable" (click)="postToServer()">Send to server</button>
         <grid-ui [grid-columns]="[{'colName':'CustomerCode'},{'colName':'CustomerName'},{'colName':'CustomerAmount'}]"
         [grid-data]="customerModels" (grid-selected)="SelectCustomer($event)"></grid-ui>

@@ -22,6 +22,7 @@ providerscoll.push({ provide: BaseLogger, useClass: ConsoleLogger });
     HomeComponent,
     MasterComponent
     
+    
   ],
   imports: [
     BrowserModule,
