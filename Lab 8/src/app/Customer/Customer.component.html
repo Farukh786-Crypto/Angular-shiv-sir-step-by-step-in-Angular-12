@@ -36,7 +36,8 @@
         <hr>
         {{customerModel.CustomerCode}} <br>
         {{customerModel.CustomerName|uppercase}} <br>
-        {{customerModel.CustomerAmount|gradePipe}} <br>
+         <!-- apply pipes here -->
+        {{customerModel.CustomerAmount|gradePipe}} <br> 
         <button class="btn btn-secondary" [disabled]="Disable" (click)="postToServer()">Send to server</button>
         <grid-ui [grid-columns]="[{'colName':'CustomerCode'},{'colName':'CustomerName'},{'colName':'CustomerAmount'}]"
         [grid-data]="customerModels" (grid-selected)="SelectCustomer($event)"></grid-ui>
